@@ -117,12 +117,12 @@ export default function Register() {
                 </div>
 
                 <Card className="border-0 shadow-2xl rounded-3xl overflow-hidden">
-                  <CardHeader className="bg-gradient-to-r from-purple-50 to-teal-50 pb-8">
+                  {/* <CardHeader className="bg-gradient-to-r from-purple-50 to-teal-50 pb-8">
                     <CardTitle className="text-2xl text-center text-gray-900">Cadastro Rápido</CardTitle>
                     <CardDescription className="text-center">
                       Preencha os dados abaixo e ganhe acesso imediato aos benefícios
                     </CardDescription>
-                  </CardHeader>
+                  </CardHeader> */}
 
                   <CardContent className="p-8 space-y-6">
                     <div className="grid grid-cols-2 gap-4">

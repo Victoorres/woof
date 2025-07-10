@@ -92,17 +92,17 @@ export default function Login() {
                   <div className="w-20 h-20 bg-gradient-to-r from-purple-600 to-teal-500 rounded-3xl flex items-center justify-center mx-auto mb-4 shadow-xl">
                     <Heart className="w-10 h-10 text-white" />
                   </div>
-                  <h2 className="heading-md text-gray-900 mb-2">Entrar na Conta</h2>
+                  <h2 className="heading-md text-gray-900 mb-2">Entrar na conta</h2>
                   <p className="text-gray-600">Acesse sua conta e continue cuidando do seu pet</p>
                 </div>
 
                 <Card className="border-0 shadow-2xl rounded-3xl overflow-hidden">
-                  <CardHeader className="bg-gradient-to-r from-purple-50 to-teal-50 pb-8">
+                  {/* <CardHeader className="bg-gradient-to-r from-purple-50 to-teal-50 pb-8">
                     <CardTitle className="text-2xl text-center text-gray-900">Login Rápido</CardTitle>
                     <CardDescription className="text-center">
                       Digite suas credenciais para acessar sua conta
                     </CardDescription>
-                  </CardHeader>
+                  </CardHeader> */}
 
                   <CardContent className="p-8 space-y-6">
                     <div className="space-y-2">
@@ -206,8 +206,8 @@ export default function Login() {
                     <div className="text-center">
                       <span className="text-sm text-gray-600">
                         Não tem uma conta?{" "}
-                        <Link href="/auth/register" className="text-purple-600 hover:text-purple-700 font-semibold">
-                          Cadastre-se grátis
+                        <Link href="/auth/register" legacyBehavior>
+                          <a className="text-purple-600 hover:text-purple-700 font-semibold">Cadastre-se grátis</a>
                         </Link>
                       </span>
                     </div>
