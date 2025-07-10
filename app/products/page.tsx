@@ -157,7 +157,7 @@ export default function Products() {
 
                 <h1 className="heading-xl text-gray-900 mb-4 md:mb-6">
                   Tudo para seu pet
-                  <span className="text-gradient block pb-2">em um só lugar</span>
+                  <span className="text-purple-600 block pb-2">em um só lugar</span>
                 </h1>
 
                 <p className="subheading max-w-4xl mx-auto mb-6 md:mb-8">

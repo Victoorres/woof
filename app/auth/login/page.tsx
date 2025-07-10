@@ -31,8 +31,8 @@ export default function Login() {
                   </div>
 
                   <h1 className="heading-lg text-gray-900 mb-6">
-                    Que Bom Te Ver
-                    <span className="text-gradient block">Novamente! 🐾</span>
+                    Que bom te ver
+                    <span className="text-purple-600 block pb-2">novamente!</span>
                   </h1>
 
                   <p className="subheading mb-8">

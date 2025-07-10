@@ -58,16 +58,16 @@ export default function CTASection() {
               size="lg"
               className="w-full md:w-auto bg-white text-purple-600 hover:bg-gray-100 px-6 md:px-10 py-3 md:py-4 text-base md:text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 group"
             >
-              <Calendar className="w-4 md:w-5 md:h-5 h-4 mr-2" />
+              <Calendar className="w-4 md:w-5 md:h-5 h-4 mr-2 hidden md:inline" />
               Agendar consulta
-              <ArrowRight className="w-4 md:w-5 md:h-5 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-4 md:w-5 md:h-5 h-4 ml-2 group-hover:translate-x-1 transition-transform hidden md:inline" />
             </Button>
             <Button
               variant="outline"
               size="lg"
               className="w-full md:w-auto border-2 border-white text-white hover:bg-white hover:text-purple-600 px-6 md:px-10 py-3 md:py-4 text-base md:text-lg font-bold bg-transparent backdrop-blur-sm group"
             >
-              <Phone className="w-4 md:w-5 md:h-5 h-4 mr-2" />
+              <Phone className="w-4 md:w-5 md:h-5 h-4 mr-2 hidden md:inline" />
               Falar com especialista
             </Button>
           </div>

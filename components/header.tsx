@@ -41,7 +41,7 @@ export default function Header() {
             >
               {item.label}
               {pathname === item.href && (
-                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-600 to-teal-500 rounded-full"></div>
+                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-purple-600 rounded-full"></div>
               )}
             </Link>
           ))}
@@ -50,7 +50,7 @@ export default function Header() {
         {/* Desktop CTA Button */}
         <Link href="/auth/register">
           <Button className="hidden md:flex btn-primary">
-            Começar Agora
+            Começar agora
             <Sparkles className="w-4 h-4 ml-2" />
           </Button>
         </Link>
@@ -79,7 +79,7 @@ export default function Header() {
             ))}
             <Link href="/auth/register">
               <Button className="btn-primary w-fit">
-                Começar Agora
+                Começar agora
                 <Sparkles className="w-4 h-4 ml-2" />
               </Button>
             </Link>

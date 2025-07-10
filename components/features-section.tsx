@@ -57,7 +57,7 @@ export default function FeaturesSection() {
         </div>
         <h2 className="heading-lg text-gray-900 mb-4 md:mb-6">
           A escolha certa para seu
-          <span className="text-gradient block pb-2">melhor amigo</span>
+          <span className="text-purple-600 block pb-2">melhor amigo</span>
         </h2>
         <p className="subheading max-w-3xl mx-auto">
           Não somos apenas mais um serviço de pet care. Somos uma revolução no cuidado animal, combinando amor genuíno

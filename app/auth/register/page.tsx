@@ -39,7 +39,7 @@ export default function Register() {
                   </div>
 
                   <h1 className="heading-lg text-gray-900 mb-6">
-                    Junte-se ao Woof e<span className="text-gradient block">Transforme a Vida do Seu Pet</span>
+                    Junte-se ao Woof e<span className="text-purple-600 block">Transforme a Vida do Seu Pet</span>
                   </h1>
 
                   <p className="subheading mb-8">

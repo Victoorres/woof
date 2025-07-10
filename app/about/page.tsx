@@ -106,7 +106,7 @@ export default function About() {
                 </div>
 
                 <h1 className="heading-xl text-gray-900 mb-4 md:mb-6">
-                  Conheça o<span className="text-gradient block pb-2">Woof</span>
+                  Conheça o<span className="text-purple-600 block pb-2">Woof</span>
                 </h1>
 
                 <p className="subheading max-w-4xl mx-auto mb-6 md:mb-8">
@@ -127,7 +127,7 @@ export default function About() {
                     </div>
                     <h2 className="heading-lg text-gray-900 mb-6">
                       Uma história de
-                      <span className="text-gradient block pb-2">amor e dedicação</span>
+                      <span className="text-purple-600 block pb-2">amor e dedicação</span>
                     </h2>
                   </div>
 
@@ -188,7 +188,7 @@ export default function About() {
                 </div>
                 <h2 className="heading-lg text-gray-900 mb-6">
                   O que nos move
-                  <span className="text-gradient block">todos os dias</span>
+                  <span className="text-purple-600 block">todos os dias</span>
                 </h2>
                 <p className="subheading max-w-3xl mx-auto">
                   Estes valores não são apenas palavras bonitas. São os princípios que guiam cada decisão, cada ação e
@@ -240,7 +240,7 @@ export default function About() {
                 </div>
                 <h2 className="heading-lg text-gray-900 mb-6">
                   Nossa equipe de
-                  <span className="text-gradient block">especialistas</span>
+                  <span className="text-purple-600 block">especialistas</span>
                 </h2>
                 <p className="subheading max-w-3xl mx-auto">
                   Profissionais apaixonados, certificados e dedicados que fazem a diferença na vida do seu pet todos os
@@ -315,7 +315,7 @@ export default function About() {
                       className="bg-white text-purple-600 hover:bg-gray-100 px-10 py-4 text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 group"
                     >
                       Agendar consulta
-                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform hidden md:inline" />
                     </Button>
                     <Button
                       variant="outline"

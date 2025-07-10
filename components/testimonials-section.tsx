@@ -51,7 +51,7 @@ export default function TestimonialsSection() {
         </div>
         <h2 className="heading-lg text-gray-900 mb-4 md:mb-6">
           Veja o que nossos clientes
-          <span className="text-gradient block">estão dizendo</span>
+          <span className="text-purple-600 block">estão dizendo</span>
         </h2>
         <p className="subheading max-w-3xl mx-auto">
           Cada depoimento representa uma vida transformada, um pet mais feliz e uma família mais tranquila. Estas são

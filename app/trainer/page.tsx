@@ -185,13 +185,13 @@ export default function Trainer() {
                 <div className="inline-flex items-center space-x-2 bg-green-100 px-3 md:px-4 py-2 rounded-full mb-4 md:mb-6">
                   <Trophy className="w-3 md:w-4 md:h-4 h-3 text-green-600" />
                   <span className="text-xs md:text-sm font-semibold text-green-700">
-                    Treinadores Certificados Internacionalmente
+                    Treinadores certificados internacionalmente
                   </span>
                 </div>
 
                 <h1 className="heading-xl text-gray-900 mb-4 md:mb-6">
                   Transforme seu pet com
-                  <span className="text-gradient block">especialistas de elite</span>
+                  <span className="text-purple-600 block">especialistas de elite</span>
                 </h1>
 
                 <p className="subheading max-w-4xl mx-auto mb-6 md:mb-8">
@@ -200,7 +200,7 @@ export default function Trainer() {
                 </p>
 
                 {/* Trust Indicators */}
-                <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 md:gap-8 mb-6 md:mb-8">
+                {/* <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 md:gap-8 mb-6 md:mb-8">
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="w-4 md:w-5 md:h-5 h-4 text-green-500" />
                     <span className="text-xs md:text-sm font-semibold text-gray-700">Resultados em 30 dias</span>
@@ -213,11 +213,11 @@ export default function Trainer() {
                     <Heart className="w-4 md:w-5 md:h-5 h-4 text-red-500" />
                     <span className="text-xs md:text-sm font-semibold text-gray-700">Métodos 100% positivos</span>
                   </div>
-                </div>
+                </div> */}
 
                 {/* CTA */}
                 <Button className="btn-primary text-base md:text-lg px-6 md:px-10 py-3 md:py-4 group w-full sm:w-auto">
-                  Agendar Avaliação Gratuita
+                  Agendar avaliação gratuita
                   <ArrowRight className="w-4 md:w-5 md:h-5 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <p className="text-xs md:text-sm text-gray-600 mt-3">
@@ -232,12 +232,12 @@ export default function Trainer() {
                 <div className="inline-flex items-center space-x-2 bg-yellow-100 px-3 md:px-4 py-2 rounded-full mb-4 md:mb-6">
                   <Star className="w-3 md:w-4 md:h-4 h-3 text-yellow-600 fill-current" />
                   <span className="text-xs md:text-sm font-semibold text-yellow-700">
-                    Histórias Reais de Transformação
+                    Histórias reais de transformação
                   </span>
                 </div>
                 <h2 className="heading-lg text-gray-900 mb-4">
                   Veja as transformações
-                  <span className="text-gradient block">incríveis</span>
+                  <span className="text-purple-600 block">incríveis</span>
                 </h2>
               </div>
 
@@ -286,7 +286,7 @@ export default function Trainer() {
                 </div>
                 <h2 className="heading-lg text-gray-900 mb-4">
                   Programas que
-                  <span className="text-gradient block">realmente funcionam</span>
+                  <span className="text-purple-600 block">realmente funcionam</span>
                 </h2>
                 <p className="subheading max-w-3xl mx-auto">
                   Cada programa é cientificamente desenvolvido para resolver problemas específicos com garantia de
@@ -348,7 +348,7 @@ export default function Trainer() {
                         ))}
                       </div>
 
-                      <Button className="w-full btn-primary text-sm md:text-base">Começar Agora</Button>
+                      <Button className="w-full btn-primary text-sm md:text-base">Começar agora</Button>
                     </CardContent>
                   </Card>
                 ))}
@@ -364,7 +364,7 @@ export default function Trainer() {
                 </div>
                 <h2 className="heading-lg text-gray-900 mb-4">
                   Conheça nossos
-                  <span className="text-gradient block">especialistas</span>
+                  <span className="text-purple-600 block">especialistas</span>
                 </h2>
                 <p className="subheading max-w-3xl mx-auto">
                   Treinadores certificados internacionalmente com anos de experiência e resultados comprovados.
@@ -478,13 +478,13 @@ export default function Trainer() {
 
                         {/* Action Buttons */}
                         <div className="flex flex-col space-y-2">
-                          <Button className="w-full btn-primary">Agendar Sessão</Button>
+                          <Button className="w-full btn-primary">Agendar sessão</Button>
                           <Button
                             variant="outline"
-                            className="w-full btn-outline bg-transparent"
+                            className="w-full btn-outline bg-transparent hover:text-purple-600"
                             onClick={() => handleViewProfile(trainer)}
                           >
-                            Ver Perfil Completo
+                            Ver perfil
                           </Button>
                         </div>
                       </div>
@@ -602,7 +602,7 @@ export default function Trainer() {
                               <Button className="flex-1 btn-primary">Agendar sessão</Button>
                               <Button
                                 variant="outline"
-                                className="flex-1 btn-outline bg-transparent"
+                                className="flex-1 btn-outline bg-transparent hover:text-purple-600"
                                 onClick={() => handleViewProfile(trainer)}
                               >
                                 Ver perfil
@@ -635,8 +635,8 @@ export default function Trainer() {
                   </div>
 
                   <h2 className="heading-lg mb-4 md:mb-6">
-                    Pronto Para Ver Seu Pet
-                    <span className="block text-yellow-300">Completamente Transformado?</span>
+                    Pronto para ver seu pet
+                    <span className="block text-yellow-300">completamente transformado?</span>
                   </h2>
 
                   <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-8 opacity-90 leading-relaxed">
@@ -645,7 +645,7 @@ export default function Trainer() {
                   </p>
 
                   {/* Benefits */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-10 max-w-2xl mx-auto text-left">
+                  {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-10 max-w-2xl mx-auto text-left">
                     {[
                       "Avaliação comportamental gratuita",
                       "Plano personalizado para seu pet",
@@ -657,7 +657,7 @@ export default function Trainer() {
                         <span className="text-sm md:text-base font-medium">{benefit}</span>
                       </div>
                     ))}
-                  </div>
+                  </div> */}
 
                   {/* CTA Buttons */}
                   <div className="flex flex-col space-y-3 md:space-y-0 md:flex-row md:gap-4 justify-center items-center mb-6 md:mb-8">
@@ -665,16 +665,16 @@ export default function Trainer() {
                       size="lg"
                       className="w-full md:w-auto bg-white text-purple-600 hover:bg-gray-100 px-6 md:px-10 py-3 md:py-4 text-base md:text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 group"
                     >
-                      <Trophy className="w-4 md:w-5 md:h-5 h-4 mr-2" />
-                      Agendar Avaliação Gratuita
-                      <ArrowRight className="w-4 md:w-5 md:h-5 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      <Trophy className="w-4 md:w-5 md:h-5 h-4 mr-2 hidden md:inline" />
+                      Agendar avaliação gratuita
+                      <ArrowRight className="w-4 md:w-5 md:h-5 h-4 ml-2 group-hover:translate-x-1 transition-transform hidden md:inline" />
                     </Button>
                     <Button
                       variant="outline"
                       size="lg"
                       className="w-full md:w-auto border-2 border-white text-white hover:bg-white hover:text-purple-600 px-6 md:px-10 py-3 md:py-4 text-base md:text-lg font-bold bg-transparent backdrop-blur-sm"
                     >
-                      Ver Todos os Programas
+                      Ver todos os programas
                     </Button>
                   </div>
 

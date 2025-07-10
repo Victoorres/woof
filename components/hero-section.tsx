@@ -26,7 +26,7 @@ export default function HeroSection() {
           <div className="space-y-3 md:space-y-4">
             <h1 className="heading-xl text-gray-900 animate-slide-up">
               Cuidado premium para seus
-              <span className="text-gradient block pb-2">pequenos amigos</span>
+              <span className="text-purple-600 block pb-2">pequenos amigos</span>
             </h1>
             <p className="subheading animate-slide-up animation-delay-200">
               Transforme a vida do seu pet com nossos serviços especializados. Cuidadores certificados, amor genuíno e

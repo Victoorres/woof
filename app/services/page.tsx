@@ -221,7 +221,7 @@ export default function Services() {
 
                 <h1 className="heading-xl text-gray-900 mb-4 md:mb-6">
                   Serviços que transformam
-                  <span className="text-gradient block pb-2">a vida do seu pet</span>
+                  <span className="text-purple-600 block pb-2">a vida do seu pet</span>
                 </h1>
 
                 <p className="subheading max-w-4xl mx-auto mb-6 md:mb-8">
@@ -352,7 +352,7 @@ export default function Services() {
                 </div>
                 <h2 className="heading-lg text-gray-900 mb-6">
                   A escolha certa para
-                  <span className="text-gradient block pb-2">seu melhor amigo</span>
+                  <span className="text-purple-600 block pb-2">seu melhor amigo</span>
                 </h2>
               </div>
 
@@ -383,7 +383,7 @@ export default function Services() {
                 </div>
                 <h2 className="heading-lg text-gray-900 mb-6">
                   Veja o que nossos
-                  <span className="text-gradient block pb-2">clientes dizem</span>
+                  <span className="text-purple-600 block pb-2">clientes dizem</span>
                 </h2>
               </div>
 
@@ -463,16 +463,16 @@ export default function Services() {
                       size="lg"
                       className="bg-white text-purple-600 hover:bg-gray-100 px-10 py-4 text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 group"
                     >
-                      <Calendar className="w-5 h-5 mr-2" />
+                      <Calendar className="w-5 h-5 mr-2 hidden md:inline" />
                       Agendar consulta
-                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform hidden md:inline" />
                     </Button>
                     <Button
                       variant="outline"
                       size="lg"
                       className="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-10 py-4 text-lg font-bold bg-transparent backdrop-blur-sm"
                     >
-                      <Phone className="w-5 h-5 mr-2" />
+                      <Phone className="w-5 h-5 mr-2 hidden md:inline" />
                       Falar com especialista
                     </Button>
                   </div>
