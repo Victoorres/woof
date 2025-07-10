@@ -33,8 +33,8 @@ export default function CTASection() {
 
           {/* Main Heading */}
           <h2 className="heading-lg mb-4 md:mb-6">
-            Pronto Para Transformar a Vida
-            <span className="block text-yellow-300">Do Seu Pet?</span>
+            Pronto para transformar a vida
+            <span className="block text-yellow-300">do seu pet?</span>
           </h2>
 
           <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-8 opacity-90 leading-relaxed">
@@ -43,14 +43,14 @@ export default function CTASection() {
           </p>
 
           {/* Benefits List */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-10 max-w-2xl mx-auto">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-10 max-w-2xl mx-auto">
             {benefits.map((benefit, index) => (
               <div key={index} className="flex items-center space-x-2 md:space-x-3 text-left">
                 <CheckCircle className="w-4 md:w-5 md:h-5 h-4 text-green-300 flex-shrink-0" />
                 <span className="text-sm md:text-base font-medium">{benefit}</span>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* CTA Buttons */}
           <div className="flex flex-col space-y-3 md:space-y-0 md:flex-row md:gap-4 justify-center items-center mb-6 md:mb-8">
@@ -59,7 +59,7 @@ export default function CTASection() {
               className="w-full md:w-auto bg-white text-purple-600 hover:bg-gray-100 px-6 md:px-10 py-3 md:py-4 text-base md:text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 group"
             >
               <Calendar className="w-4 md:w-5 md:h-5 h-4 mr-2" />
-              Agendar Consulta Gratuita
+              Agendar consulta gratuita
               <ArrowRight className="w-4 md:w-5 md:h-5 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
@@ -68,7 +68,7 @@ export default function CTASection() {
               className="w-full md:w-auto border-2 border-white text-white hover:bg-white hover:text-purple-600 px-6 md:px-10 py-3 md:py-4 text-base md:text-lg font-bold bg-transparent backdrop-blur-sm group"
             >
               <Phone className="w-4 md:w-5 md:h-5 h-4 mr-2" />
-              Falar com Especialista
+              Falar com especialista
             </Button>
           </div>
 

@@ -1,136 +1,136 @@
-"use client"
+'use client';
 
-import Header from "@/components/header"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Star, ShoppingCart, Search, Filter, Heart, Zap } from "lucide-react"
-import { useState, useMemo } from "react"
+import Header from '@/components/header';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
+import { Star, ShoppingCart, Search, Filter, Heart, Zap, ArrowRight, CheckCircle, Award, Trophy } from 'lucide-react';
+import { useState, useMemo } from 'react';
 
 export default function Products() {
-  const [selectedCategory, setSelectedCategory] = useState("Todos")
-  const [searchTerm, setSearchTerm] = useState("")
-  const [sortBy, setSortBy] = useState("name")
+  const [selectedCategory, setSelectedCategory] = useState('Todos');
+  const [searchTerm, setSearchTerm] = useState('');
+  const [sortBy, setSortBy] = useState('name');
 
   const categories = [
-    { name: "Todos", count: 139, icon: "🛍️" },
-    { name: "Ração e Petiscos", count: 45, icon: "🥘" },
-    { name: "Brinquedos", count: 32, icon: "🎾" },
-    { name: "Acessórios", count: 28, icon: "🎀" },
-    { name: "Saúde e Cuidados", count: 19, icon: "💊" },
-    { name: "Adestramento", count: 15, icon: "🎯" },
-  ]
+    { name: 'Todos', count: 139, icon: '🛍️' },
+    { name: 'Ração e Petiscos', count: 45, icon: '🥘' },
+    { name: 'Brinquedos', count: 32, icon: '🎾' },
+    { name: 'Acessórios', count: 28, icon: '🎀' },
+    { name: 'Saúde e Cuidados', count: 19, icon: '💊' },
+    { name: 'Adestramento', count: 15, icon: '🎯' },
+  ];
 
   const allProducts = [
     {
       id: 1,
-      name: "Ração Premium Royal Canin",
-      category: "Ração e Petiscos",
+      name: 'Ração Premium Royal Canin',
+      category: 'Ração e Petiscos',
       price: 89.99,
       originalPrice: 109.99,
       rating: 4.8,
       reviews: 124,
       image:
-        "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-      badge: "Mais Vendido",
-      description: "Nutrição científica premium para cães adultos",
-      features: ["Rico em proteínas", "Digestão fácil", "Pelagem brilhante"],
+        'https://images.unsplash.com/photo-1589924691995-400dc9ecc119?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      badge: 'Mais Vendido',
+      description: 'Nutrição científica premium para cães adultos',
+      features: ['Rico em proteínas', 'Digestão fácil', 'Pelagem brilhante'],
     },
     {
       id: 2,
-      name: "Brinquedo Quebra-Cabeça Kong",
-      category: "Brinquedos",
+      name: 'Brinquedo Quebra-Cabeça Kong',
+      category: 'Brinquedos',
       price: 49.99,
       rating: 4.6,
       reviews: 89,
       image:
-        "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-      badge: "Novo",
-      description: "Estimulação mental e entretenimento duradouro",
-      features: ["Material resistente", "Estimula inteligência", "Reduz ansiedade"],
+        'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      badge: 'Novo',
+      description: 'Estimulação mental e entretenimento duradouro',
+      features: ['Material resistente', 'Estimula inteligência', 'Reduz ansiedade'],
     },
     {
       id: 3,
-      name: "Cama Ortopédica Memory Foam",
-      category: "Acessórios",
+      name: 'Cama Ortopédica Memory Foam',
+      category: 'Acessórios',
       price: 159.99,
       rating: 4.9,
       reviews: 156,
       image:
-        "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-      description: "Suporte ortopédico premium para melhor sono",
-      features: ["Memory foam", "Capa removível", "Anti-alérgico"],
+        'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      description: 'Suporte ortopédico premium para melhor sono',
+      features: ['Memory foam', 'Capa removível', 'Anti-alérgico'],
     },
     {
       id: 4,
-      name: "Shampoo Natural Orgânico",
-      category: "Saúde e Cuidados",
+      name: 'Shampoo Natural Orgânico',
+      category: 'Saúde e Cuidados',
       price: 37.99,
       rating: 4.7,
       reviews: 67,
       image:
-        "https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-      description: "Fórmula natural para pele sensível",
-      features: ["100% natural", "Sem parabenos", "pH balanceado"],
+        'https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      description: 'Fórmula natural para pele sensível',
+      features: ['100% natural', 'Sem parabenos', 'pH balanceado'],
     },
     {
       id: 5,
-      name: "Kit Clicker Profissional",
-      category: "Adestramento",
+      name: 'Kit Clicker Profissional',
+      category: 'Adestramento',
       price: 25.99,
       rating: 4.5,
       reviews: 43,
       image:
-        "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-      description: "Kit completo para treinamento positivo",
-      features: ["Som consistente", "Ergonômico", "Guia incluso"],
+        'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      description: 'Kit completo para treinamento positivo',
+      features: ['Som consistente', 'Ergonômico', 'Guia incluso'],
     },
     {
       id: 6,
-      name: "Arranhador Torre Premium",
-      category: "Acessórios",
+      name: 'Arranhador Torre Premium',
+      category: 'Acessórios',
       price: 69.99,
       rating: 4.4,
       reviews: 78,
       image:
-        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-      description: "Torre de arranhador com múltiplos níveis",
-      features: ["Sisal natural", "Base estável", "Múltiplos níveis"],
+        'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      description: 'Torre de arranhador com múltiplos níveis',
+      features: ['Sisal natural', 'Base estável', 'Múltiplos níveis'],
     },
-  ]
+  ];
 
   const filteredProducts = useMemo(() => {
-    let filtered = allProducts
+    let filtered = allProducts;
 
-    if (selectedCategory !== "Todos") {
-      filtered = filtered.filter((product) => product.category === selectedCategory)
+    if (selectedCategory !== 'Todos') {
+      filtered = filtered.filter((product) => product.category === selectedCategory);
     }
 
     if (searchTerm) {
       filtered = filtered.filter(
         (product) =>
           product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          product.description.toLowerCase().includes(searchTerm.toLowerCase()),
-      )
+          product.description.toLowerCase().includes(searchTerm.toLowerCase())
+      );
     }
 
     filtered.sort((a, b) => {
       switch (sortBy) {
-        case "price-low":
-          return a.price - b.price
-        case "price-high":
-          return b.price - a.price
-        case "rating":
-          return b.rating - a.rating
-        case "name":
+        case 'price-low':
+          return a.price - b.price;
+        case 'price-high':
+          return b.price - a.price;
+        case 'rating':
+          return b.rating - a.rating;
+        case 'name':
         default:
-          return a.name.localeCompare(b.name)
+          return a.name.localeCompare(b.name);
       }
-    })
+    });
 
-    return filtered
-  }, [selectedCategory, searchTerm, sortBy])
+    return filtered;
+  }, [selectedCategory, searchTerm, sortBy]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-600 via-purple-500 to-purple-700">
@@ -140,20 +140,32 @@ export default function Products() {
 
           <main className="px-8 py-16">
             {/* Hero Section */}
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center space-x-2 bg-purple-100 px-4 py-2 rounded-full mb-6">
-                <ShoppingCart className="w-4 h-4 text-purple-600" />
-                <span className="text-sm font-semibold text-purple-700">Produtos premium selecionados</span>
+            <section className="text-center mb-12 md:mb-20 relative overflow-hidden">
+              {/* Background Elements */}
+              <div className="absolute inset-0 overflow-hidden">
+                <div className="absolute top-20 left-10 w-32 h-32 bg-purple-200 rounded-full opacity-20 animate-float"></div>
+                <div className="absolute bottom-20 right-10 w-24 h-24 bg-teal-200 rounded-full opacity-20 animate-float animation-delay-300"></div>
               </div>
-              <h1 className="heading-lg text-gray-900 mb-6">
-                Tudo para seu pet
-                <span className="text-gradient block pb-2">em um só lugar</span>
-              </h1>
-              <p className="subheading max-w-3xl mx-auto">
-                Produtos cuidadosamente selecionados pelos nossos especialistas. Qualidade premium, preços justos e
-                entrega rápida para manter seu pet sempre feliz e saudável.
-              </p>
-            </div>
+
+              <div className="relative z-10">
+                <div className="inline-flex items-center space-x-2 bg-purple-100 px-3 md:px-4 py-2 rounded-full mb-4 md:mb-6">
+                  <ShoppingCart className="w-3 md:w-4 md:h-4 h-3 text-purple-600" />
+                  <span className="text-xs md:text-sm font-semibold text-purple-700">
+                    Produtos premium selecionados
+                  </span>
+                </div>
+
+                <h1 className="heading-xl text-gray-900 mb-4 md:mb-6">
+                  Tudo para seu pet
+                  <span className="text-gradient block pb-2">em um só lugar</span>
+                </h1>
+
+                <p className="subheading max-w-4xl mx-auto mb-6 md:mb-8">
+                  Produtos cuidadosamente selecionados pelos nossos especialistas. Qualidade premium, preços justos e
+                  entrega rápida para manter seu pet sempre feliz e saudável.
+                </p>
+              </div>
+            </section>
 
             {/* Search and Filter Bar */}
             <div className="mb-8 bg-white rounded-3xl p-6 shadow-xl border border-gray-100">
@@ -198,8 +210,8 @@ export default function Products() {
                         onClick={() => setSelectedCategory(category.name)}
                         className={`w-full flex items-center justify-between p-4 rounded-2xl transition-all duration-300 text-left group ${
                           selectedCategory === category.name
-                            ? "bg-gradient-to-r from-purple-500 to-teal-500 text-white shadow-lg"
-                            : "hover:bg-purple-50 text-gray-700 hover:shadow-md"
+                            ? 'bg-gradient-to-r from-purple-500 to-teal-500 text-white shadow-lg'
+                            : 'hover:bg-purple-50 text-gray-700 hover:shadow-md'
                         }`}
                       >
                         <div className="flex items-center space-x-3">
@@ -209,11 +221,11 @@ export default function Products() {
                         <Badge
                           className={
                             selectedCategory === category.name
-                              ? "bg-white/20 text-white border-white/30"
-                              : "bg-purple-100 text-purple-700"
+                              ? 'bg-white/20 text-white border-white/30'
+                              : 'bg-purple-100 text-purple-700'
                           }
                         >
-                          {category.name === "Todos" ? allProducts.length : category.count}
+                          {category.name === 'Todos' ? allProducts.length : category.count}
                         </Badge>
                       </button>
                     ))}
@@ -223,7 +235,7 @@ export default function Products() {
                   <div className="mt-8 pt-6 border-t border-gray-200">
                     <div className="bg-gradient-to-r from-purple-50 to-teal-50 p-4 rounded-2xl">
                       <p className="font-bold text-gray-900 mb-2">{filteredProducts.length} produtos encontrados</p>
-                      {selectedCategory !== "Todos" && (
+                      {selectedCategory !== 'Todos' && (
                         <p className="text-sm text-purple-600 mb-1">📂 {selectedCategory}</p>
                       )}
                       {searchTerm && <p className="text-sm text-teal-600">🔍 "{searchTerm}"</p>}
@@ -243,8 +255,8 @@ export default function Products() {
                     <p className="subheading mb-6">Que tal tentar outros filtros ou termos de busca?</p>
                     <Button
                       onClick={() => {
-                        setSelectedCategory("Todos")
-                        setSearchTerm("")
+                        setSelectedCategory('Todos');
+                        setSearchTerm('');
                       }}
                       className="btn-primary"
                     >
@@ -261,7 +273,7 @@ export default function Products() {
                         <CardHeader className="p-0 relative">
                           <div className="relative overflow-hidden">
                             <img
-                              src={product.image || "/placeholder.svg"}
+                              src={product.image || '/placeholder.svg'}
                               alt={product.name}
                               className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
                             />
@@ -270,12 +282,12 @@ export default function Products() {
                             {product.badge && (
                               <Badge
                                 className={`absolute top-4 left-4 ${
-                                  product.badge === "Mais Vendido"
-                                    ? "bg-red-500 hover:bg-red-600 text-white"
-                                    : "bg-green-500 hover:bg-green-600 text-white"
+                                  product.badge === 'Mais Vendido'
+                                    ? 'bg-red-500 hover:bg-red-600 text-white'
+                                    : 'bg-green-500 hover:bg-green-600 text-white'
                                 } shadow-lg`}
                               >
-                                {product.badge === "Mais Vendido" ? "🔥" : "✨"} {product.badge}
+                                {product.badge === 'Mais Vendido' ? '🔥' : '✨'} {product.badge}
                               </Badge>
                             )}
 
@@ -334,7 +346,7 @@ export default function Products() {
                                 <Star
                                   key={i}
                                   className={`w-4 h-4 ${
-                                    i < Math.floor(product.rating) ? "text-yellow-400 fill-current" : "text-gray-300"
+                                    i < Math.floor(product.rating) ? 'text-yellow-400 fill-current' : 'text-gray-300'
                                   }`}
                                 />
                               ))}
@@ -386,5 +398,5 @@ export default function Products() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,86 +1,86 @@
-import Header from "@/components/header"
-import { Heart, Users, Award, Clock, Target, Lightbulb, Shield, Star, ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Header from '@/components/header';
+import { Heart, Users, Award, Clock, Target, Lightbulb, Shield, Star, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export default function About() {
   const stats = [
-    { icon: Heart, number: "500+", label: "Pets Transformados", color: "text-red-600", bg: "bg-red-100" },
-    { icon: Users, number: "200+", label: "Famílias Felizes", color: "text-blue-600", bg: "bg-blue-100" },
-    { icon: Award, number: "5", label: "Anos de Excelência", color: "text-yellow-600", bg: "bg-yellow-100" },
-    { icon: Clock, number: "24/7", label: "Suporte Disponível", color: "text-green-600", bg: "bg-green-100" },
-  ]
+    { icon: Heart, number: '500+', label: 'Pets Transformados', color: 'text-red-600', bg: 'bg-red-100' },
+    { icon: Users, number: '200+', label: 'Famílias Felizes', color: 'text-blue-600', bg: 'bg-blue-100' },
+    { icon: Award, number: '5', label: 'Anos de Excelência', color: 'text-yellow-600', bg: 'bg-yellow-100' },
+    { icon: Clock, number: '24/7', label: 'Suporte Disponível', color: 'text-green-600', bg: 'bg-green-100' },
+  ];
 
   const values = [
     {
       icon: Heart,
-      title: "Amor Incondicional",
+      title: 'Amor incondicional',
       description:
-        "Cada pet é tratado como família. Nosso amor pelos animais é genuíno e transparece em cada cuidado, cada carinho e cada momento de atenção dedicado.",
-      color: "from-red-500 to-pink-500",
+        'Cada pet é tratado como família. Nosso amor pelos animais é genuíno e transparece em cada cuidado, cada carinho e cada momento de atenção dedicado.',
+      color: 'from-red-500 to-pink-500',
     },
     {
       icon: Award,
-      title: "Excelência Sem Compromisso",
+      title: 'Excelência',
       description:
-        "Padrões internacionais de qualidade, profissionais certificados e processos rigorosos garantem que seu pet receba sempre o melhor cuidado possível.",
-      color: "from-yellow-500 to-orange-500",
+        'Padrões internacionais de qualidade, profissionais certificados e processos rigorosos garantem que seu pet receba sempre o melhor cuidado possível.',
+      color: 'from-yellow-500 to-orange-500',
     },
     {
       icon: Users,
-      title: "Comunidade Unida",
+      title: 'Comunidade unida',
       description:
-        "Mais que clientes, somos uma família. Construímos relacionamentos duradouros baseados na confiança mútua e no amor compartilhado pelos animais.",
-      color: "from-blue-500 to-cyan-500",
+        'Mais que clientes, somos uma família. Construímos relacionamentos duradouros baseados na confiança mútua e no amor compartilhado pelos animais.',
+      color: 'from-blue-500 to-cyan-500',
     },
     {
       icon: Shield,
-      title: "Confiança Total",
+      title: 'Confiança total',
       description:
-        "Transparência absoluta, comunicação constante e responsabilidade integral. Sua tranquilidade é nossa prioridade número um.",
-      color: "from-green-500 to-teal-500",
+        'Transparência absoluta, comunicação constante e responsabilidade integral. Sua tranquilidade é nossa prioridade número um.',
+      color: 'from-green-500 to-teal-500',
     },
     {
       icon: Target,
-      title: "Foco no Resultado",
+      title: 'Foco no resultado',
       description:
-        "Cada serviço é personalizado para atingir objetivos específicos. Medimos nosso sucesso pela felicidade e bem-estar do seu pet.",
-      color: "from-purple-500 to-indigo-500",
+        'Cada serviço é personalizado para atingir objetivos específicos. Medimos nosso sucesso pela felicidade e bem-estar do seu pet.',
+      color: 'from-purple-500 to-indigo-500',
     },
     {
       icon: Lightbulb,
-      title: "Inovação Constante",
+      title: 'Inovação constante',
       description:
-        "Tecnologia de ponta, métodos científicos atualizados e inovação contínua para oferecer sempre o que há de mais moderno no cuidado animal.",
-      color: "from-teal-500 to-cyan-500",
+        'Tecnologia de ponta, métodos científicos atualizados e inovação contínua para oferecer sempre o mais moderno no cuidado animal.',
+      color: 'from-teal-500 to-cyan-500',
     },
-  ]
+  ];
 
   const team = [
     {
-      name: "Dra. Ana Silva",
-      role: "Veterinária Chefe & Fundadora",
-      experience: "12 anos salvando vidas",
-      image: "https://randomuser.me/api/portraits/women/45.jpg",
-      specialties: ["Cirurgia Avançada", "Medicina Interna", "Emergências"],
-      description: "Formada pela USP, especialista em comportamento animal e apaixonada por salvar vidas.",
+      name: 'Dra. Ana Silva',
+      role: 'Veterinária Chefe & Fundadora',
+      experience: '+12 anos',
+      image: 'https://randomuser.me/api/portraits/women/45.jpg',
+      specialties: ['Cirurgia Avançada', 'Medicina Interna', 'Emergências'],
+      description: 'Formada pela USP, especialista em comportamento animal e apaixonada por salvar vidas.',
     },
     {
-      name: "Carlos Santos",
-      role: "Especialista em Comportamento",
-      experience: "8 anos transformando pets",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
-      specialties: ["Adestramento Positivo", "Terapia Comportamental", "Socialização"],
-      description: "Certificado internacionalmente, já ajudou mais de 300 pets com problemas comportamentais.",
+      name: 'Carlos Santos',
+      role: 'Especialista em Comportamento',
+      experience: '+8 anos',
+      image: 'https://randomuser.me/api/portraits/men/32.jpg',
+      specialties: ['Adestramento Positivo', 'Terapia Comportamental', 'Socialização'],
+      description: 'Certificado internacionalmente, já ajudou mais de 300 pets com problemas comportamentais.',
     },
     {
-      name: "Marina Costa",
-      role: "Coordenadora de Bem-Estar",
-      experience: "6 anos cuidando com amor",
-      image: "https://randomuser.me/api/portraits/women/28.jpg",
-      specialties: ["Nutrição Especializada", "Cuidados Diários", "Terapias Alternativas"],
-      description: "Especialista em nutrição animal e bem-estar holístico, sempre buscando o melhor para cada pet.",
+      name: 'Marina Costa',
+      role: 'Coordenadora de Bem-Estar',
+      experience: '+6 anos',
+      image: 'https://randomuser.me/api/portraits/women/28.jpg',
+      specialties: ['Nutrição Especializada', 'Cuidados Diários', 'Terapias Alternativas'],
+      description: 'Especialista em nutrição animal e bem-estar holístico, sempre buscando o melhor para cada pet.',
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-600 via-purple-500 to-purple-700">
@@ -88,44 +88,31 @@ export default function About() {
         <div className="bg-gray-50 rounded-3xl shadow-2xl overflow-hidden min-h-screen">
           <Header />
 
-          <main>
+          <main className="px-8 py-16">
             {/* Hero Section */}
-            <section className="px-8 py-20 bg-gradient-to-br from-purple-50 via-white to-teal-50 relative overflow-hidden">
+            <section className="text-center mb-12 md:mb-20 relative overflow-hidden">
               {/* Background Elements */}
               <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 left-10 w-32 h-32 bg-purple-200 rounded-full opacity-20 animate-float"></div>
                 <div className="absolute bottom-20 right-10 w-24 h-24 bg-teal-200 rounded-full opacity-20 animate-float animation-delay-300"></div>
               </div>
 
-              <div className="relative z-10 text-center mb-16">
-                <div className="inline-flex items-center space-x-2 bg-purple-100 px-4 py-2 rounded-full mb-6">
-                  <Heart className="w-4 h-4 text-purple-600" />
-                  <span className="text-sm font-semibold text-purple-700">Nossa História de Amor pelos Pets</span>
+              <div className="relative z-10">
+                <div className="inline-flex items-center space-x-2 bg-red-100 px-3 md:px-4 py-2 rounded-full mb-4 md:mb-6">
+                  <Heart className="w-3 md:w-4 md:h-4 h-3 text-red-600" />
+                  <span className="text-xs md:text-sm font-semibold text-red-700">
+                    Nossa história de amor pelos pets
+                  </span>
                 </div>
-                <h1 className="heading-xl text-gray-900 mb-6">
-                  Conheça o<span className="text-gradient block">Woof</span>
+
+                <h1 className="heading-xl text-gray-900 mb-4 md:mb-6">
+                  Conheça o<span className="text-gradient block pb-2">Woof</span>
                 </h1>
-                <p className="subheading max-w-4xl mx-auto">
+
+                <p className="subheading max-w-4xl mx-auto mb-6 md:mb-8">
                   Nascemos do amor incondicional pelos animais e da missão de revolucionar o cuidado pet no Brasil. Cada
                   dia trabalhamos para criar um mundo onde todos os pets recebam o amor, cuidado e atenção que merecem.
                 </p>
-              </div>
-
-              {/* Stats Grid */}
-              <div className="grid md:grid-cols-4 gap-8">
-                {stats.map((stat, index) => (
-                  <div key={index} className="text-center group">
-                    <div
-                      className={`w-20 h-20 ${stat.bg} rounded-3xl shadow-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-all duration-300 card-glow`}
-                    >
-                      <stat.icon className={`w-10 h-10 ${stat.color}`} />
-                    </div>
-                    <h3 className="text-4xl lg:text-5xl font-black text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
-                      {stat.number}
-                    </h3>
-                    <p className="font-semibold text-gray-600">{stat.label}</p>
-                  </div>
-                ))}
               </div>
             </section>
 
@@ -139,16 +126,15 @@ export default function About() {
                       <span className="text-sm font-semibold text-teal-700">Nossa Jornada</span>
                     </div>
                     <h2 className="heading-lg text-gray-900 mb-6">
-                      Uma História de
-                      <span className="text-gradient block">Amor e Dedicação</span>
+                      Uma história de
+                      <span className="text-gradient block pb-2">amor e dedicação</span>
                     </h2>
                   </div>
 
                   <div className="space-y-6 text-lg leading-relaxed text-gray-700">
                     <p>
-                      <strong className="text-purple-600">Em 2019</strong>, três amigos veterinários se uniram com um
-                      sonho: criar o melhor serviço de cuidado pet do Brasil. Cansados de ver pets mal cuidados e donos
-                      preocupados, decidimos fazer a diferença.
+                      Em 2019, três amigos veterinários se uniram com um sonho: criar o melhor serviço de cuidado pet do
+                      Brasil. Cansados de ver pets mal cuidados e donos preocupados, decidimos fazer a diferença.
                     </p>
                     <p>
                       O que começou em uma pequena clínica se transformou em uma
@@ -157,7 +143,7 @@ export default function About() {
                     </p>
                     <p>
                       Cada pet que cuidamos, cada família que atendemos, cada vida que transformamos nos motiva a
-                      continuar inovando e oferecendo{" "}
+                      continuar inovando e oferecendo{' '}
                       <strong className="text-green-600">excelência em cada detalhe</strong>.
                     </p>
                   </div>
@@ -167,24 +153,20 @@ export default function About() {
                       Conhecer Nossos Serviços
                       <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
-                    <Button className="btn-outline">Falar com Nossa Equipe</Button>
                   </div>
                 </div>
 
                 <div className="relative">
                   <div className="relative z-10">
                     <img
-                      src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                      src="https://plus.unsplash.com/premium_photo-1694819488591-a43907d1c5cc?q=80&w=414&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt="Equipe Woof cuidando de pets com amor"
-                      className="rounded-3xl shadow-2xl"
+                      className="rounded-3xl shadow-2xl w-full h-full"
                     />
                   </div>
-                  {/* Decorative elements */}
-                  <div className="absolute -top-6 -left-6 w-24 h-24 bg-purple-200 rounded-full opacity-50 animate-float"></div>
-                  <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-teal-200 rounded-full opacity-50 animate-float animation-delay-300"></div>
 
                   {/* Floating testimonial */}
-                  <div className="absolute top-8 -right-8 bg-white p-4 rounded-2xl shadow-xl max-w-xs animate-float animation-delay-500">
+                  <div className="absolute md:top-8 md:-right-8 bg-white p-4 rounded-2xl shadow-xl max-w-xs animate-float animation-delay-500 z-[20]">
                     <div className="flex items-center space-x-2 mb-2">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
@@ -202,11 +184,11 @@ export default function About() {
               <div className="text-center mb-16">
                 <div className="inline-flex items-center space-x-2 bg-purple-100 px-4 py-2 rounded-full mb-6">
                   <Award className="w-4 h-4 text-purple-600" />
-                  <span className="text-sm font-semibold text-purple-700">Nossos Valores Fundamentais</span>
+                  <span className="text-sm font-semibold text-purple-700">Nossos valores fundamentais</span>
                 </div>
                 <h2 className="heading-lg text-gray-900 mb-6">
-                  O Que Nos Move
-                  <span className="text-gradient block">Todos os Dias</span>
+                  O que nos move
+                  <span className="text-gradient block">todos os dias</span>
                 </h2>
                 <p className="subheading max-w-3xl mx-auto">
                   Estes valores não são apenas palavras bonitas. São os princípios que guiam cada decisão, cada ação e
@@ -240,9 +222,9 @@ export default function About() {
                       <p className="body text-gray-600 leading-relaxed">{value.description}</p>
 
                       {/* Hover Effect Line */}
-                      <div
+                      {/* <div
                         className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${value.color} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full`}
-                      ></div>
+                      ></div> */}
                     </div>
                   </div>
                 ))}
@@ -254,11 +236,11 @@ export default function About() {
               <div className="text-center mb-16">
                 <div className="inline-flex items-center space-x-2 bg-teal-100 px-4 py-2 rounded-full mb-6">
                   <Users className="w-4 h-4 text-teal-600" />
-                  <span className="text-sm font-semibold text-teal-700">Conheça Quem Cuida do Seu Pet</span>
+                  <span className="text-sm font-semibold text-teal-700">Conheça quem cuida do seu pet</span>
                 </div>
                 <h2 className="heading-lg text-gray-900 mb-6">
-                  Nossa Equipe de
-                  <span className="text-gradient block">Especialistas</span>
+                  Nossa equipe de
+                  <span className="text-gradient block">especialistas</span>
                 </h2>
                 <p className="subheading max-w-3xl mx-auto">
                   Profissionais apaixonados, certificados e dedicados que fazem a diferença na vida do seu pet todos os
@@ -268,15 +250,14 @@ export default function About() {
 
               <div className="grid md:grid-cols-3 gap-8">
                 {team.map((member, index) => (
-                  <div key={index} className="text-center group card-hover">
+                  <div key={index} className="text-center group card-hover p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 relative">
                     <div className="relative mb-8">
                       <div className="relative">
                         <img
-                          src={member.image || "/placeholder.svg"}
+                          src={member.image || '/placeholder.svg'}
                           alt={member.name}
                           className="w-56 h-56 rounded-3xl object-cover mx-auto shadow-2xl group-hover:scale-105 transition-transform duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
 
                       {/* Floating badge */}
@@ -319,8 +300,8 @@ export default function About() {
 
                 <div className="relative z-10 max-w-4xl mx-auto">
                   <h2 className="heading-lg mb-6">
-                    Pronto Para Fazer Parte
-                    <span className="block text-yellow-300">Da Nossa Família?</span>
+                    Pronto para fazer parte
+                    <span className="block text-yellow-300">da nossa família?</span>
                   </h2>
                   <p className="text-xl lg:text-2xl mb-8 opacity-90 leading-relaxed">
                     Junte-se a mais de 500 famílias que já descobriram o que é ter um pet verdadeiramente feliz e bem
@@ -333,7 +314,7 @@ export default function About() {
                       size="lg"
                       className="bg-white text-purple-600 hover:bg-gray-100 px-10 py-4 text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 group"
                     >
-                      Agendar Consulta Gratuita
+                      Agendar consulta gratuita
                       <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                     <Button
@@ -341,7 +322,7 @@ export default function About() {
                       size="lg"
                       className="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-10 py-4 text-lg font-bold bg-transparent backdrop-blur-sm"
                     >
-                      Conhecer Nossos Serviços
+                      Conhecer nossos serviços
                     </Button>
                   </div>
 
@@ -367,5 +348,5 @@ export default function About() {
         </div>
       </div>
     </div>
-  )
+  );
 }

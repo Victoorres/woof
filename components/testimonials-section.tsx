@@ -133,7 +133,7 @@ export default function TestimonialsSection() {
       {/* CTA */}
       <div className="text-center mt-8 md:mt-12">
         <Button className="btn-primary group text-base md:text-lg px-8 md:px-10 py-3 md:py-4 w-full sm:w-auto">
-          Quero Ser o Próximo Caso de Sucesso
+          Quero ser o próximo caso de sucesso
           <ArrowRight className="w-4 md:w-5 md:h-5 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
         </Button>
         <p className="text-xs md:text-sm text-gray-600 mt-3">Consulta gratuita • Sem compromisso • Resposta em 24h</p>
