@@ -138,7 +138,7 @@ export default function Products() {
         <div className="bg-gray-50 rounded-3xl shadow-2xl overflow-hidden min-h-screen">
           <Header />
 
-          <main className="px-8 py-16">
+          <main className="px-4 md:px-8 py-12 md:py-16">
             {/* Hero Section */}
             <section className="text-center mb-12 md:mb-20 relative overflow-hidden">
               {/* Background Elements */}
@@ -173,7 +173,7 @@ export default function Products() {
                 <div className="relative flex-1">
                   <Search className="absolute left-4 top-4 h-5 w-5 text-gray-400" />
                   <Input
-                    placeholder="Buscar produtos incríveis..."
+                    placeholder="Buscar produtos..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="pl-12 h-14 border-gray-200 focus:border-purple-500 focus:ring-purple-500 rounded-2xl text-lg"
@@ -182,7 +182,7 @@ export default function Products() {
                 <div className="flex items-center gap-4">
                   <div className="flex items-center gap-2">
                     <Filter className="h-5 w-5 text-gray-600" />
-                    <span className="font-medium text-gray-700">Ordenar:</span>
+                    <span className="font-medium text-gray-700 hidden md:block">Ordenar:</span>
                   </div>
                   <select
                     value={sortBy}
@@ -385,13 +385,13 @@ export default function Products() {
 
             {/* Bottom CTA */}
             <div className="mt-20 bg-gradient-to-r from-purple-600 to-teal-600 rounded-3xl p-12 text-center text-white">
-              <h3 className="heading-md mb-4">Não Encontrou o Que Procura?</h3>
+              <h3 className="heading-md mb-4">Não encontrou o que procura?</h3>
               <p className="text-xl mb-8 opacity-90">
                 Nossa equipe de especialistas pode ajudar você a encontrar o produto perfeito para seu pet!
               </p>
               <Button className="bg-white text-purple-600 hover:bg-gray-100 font-bold px-8 py-4 text-lg">
                 <Zap className="w-5 h-5 mr-2" />
-                Falar com Especialista
+                Fale conosco
               </Button>
             </div>
           </main>

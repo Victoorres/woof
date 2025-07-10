@@ -88,7 +88,7 @@ export default function About() {
         <div className="bg-gray-50 rounded-3xl shadow-2xl overflow-hidden min-h-screen">
           <Header />
 
-          <main className="px-8 py-16">
+          <main className="px-4 md:px-8 py-12 md:py-16">
             {/* Hero Section */}
             <section className="text-center mb-12 md:mb-20 relative overflow-hidden">
               {/* Background Elements */}
@@ -117,7 +117,7 @@ export default function About() {
             </section>
 
             {/* Story Section */}
-            <section className="px-8 py-20 bg-white">
+            <section className="px-4 md:px-8 py-12 md:py-20 bg-white">
               <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div className="space-y-8">
                   <div>
@@ -150,7 +150,7 @@ export default function About() {
 
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button className="btn-primary group">
-                      Conhecer Nossos Serviços
+                      Conhecer nossos serviços
                       <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </div>
@@ -180,7 +180,7 @@ export default function About() {
             </section>
 
             {/* Values Section */}
-            <section className="px-8 py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+            <section className="px-4 md:px-8 py-12 md:py-20 bg-gradient-to-br from-purple-50 via-white to-teal-50">
               <div className="text-center mb-16">
                 <div className="inline-flex items-center space-x-2 bg-purple-100 px-4 py-2 rounded-full mb-6">
                   <Award className="w-4 h-4 text-purple-600" />
@@ -232,7 +232,7 @@ export default function About() {
             </section>
 
             {/* Team Section */}
-            <section className="px-8 py-20 bg-white">
+            <section className="px-4 md:px-8 py-12 md:py-20 bg-white">
               <div className="text-center mb-16">
                 <div className="inline-flex items-center space-x-2 bg-teal-100 px-4 py-2 rounded-full mb-6">
                   <Users className="w-4 h-4 text-teal-600" />
@@ -290,7 +290,7 @@ export default function About() {
             </section>
 
             {/* CTA Section */}
-            <section className="px-8 py-20">
+            <section className="py-20">
               <div className="bg-gradient-to-br from-purple-600 via-purple-700 to-teal-600 rounded-3xl p-12 lg:p-16 text-center text-white relative overflow-hidden">
                 {/* Background decorations */}
                 <div className="absolute inset-0 overflow-hidden">
@@ -314,7 +314,7 @@ export default function About() {
                       size="lg"
                       className="bg-white text-purple-600 hover:bg-gray-100 px-10 py-4 text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 group"
                     >
-                      Agendar consulta gratuita
+                      Agendar consulta
                       <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                     <Button
@@ -322,7 +322,7 @@ export default function About() {
                       size="lg"
                       className="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-10 py-4 text-lg font-bold bg-transparent backdrop-blur-sm"
                     >
-                      Conhecer nossos serviços
+                      Conhecer serviços
                     </Button>
                   </div>
 
