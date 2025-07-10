@@ -21,19 +21,12 @@ export default function Header() {
   return (
     <header className="px-8 py-6 bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
       <nav className="flex items-center justify-between">
-        <Link href="/" className="flex items-center space-x-3 group">
-          <div className="relative">
-            <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-teal-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-              <span className="text-white text-xl font-bold">🐾</span>
-            </div>
-            <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full flex items-center justify-center">
-              <Sparkles className="w-2 h-2 text-yellow-800" />
-            </div>
-          </div>
-          <div>
-            <span className="text-2xl font-black text-gradient">Woof</span>
-            <p className="text-xs text-gray-500 -mt-1">Pet Care Premium</p>
-          </div>
+        <Link href="/" className="flex items-center">
+          <img
+            src="/woof-logo.png"
+            alt="Woof Logo"
+            className="w-full h-10 md:w-full md:h-22 object-contain"
+          />
         </Link>
 
         {/* Desktop Navigation */}
